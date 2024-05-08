@@ -1,0 +1,127 @@
+\doxysection{Referencia del archivo LCD.\+h}
+\hypertarget{_l_c_d_8h}{}\label{_l_c_d_8h}\index{LCD.h@{LCD.h}}
+
+
+Confi.  
+
+
+\doxysubsubsection*{defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_l_c_d_8h_af8903d8eea3868940c60af887473b152}{RS}}~PORTDbits.\+RD0  /\texorpdfstring{$\ast$}{*}PIN 0 of PORTD is assigned for register select Pin of LCD\texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{_l_c_d_8h_a22e6626f2c98ed902f8ded47f6438c05}{EN}}~PORTDbits.\+RD1  /\texorpdfstring{$\ast$}{*}PIN 1 of PORTD is assigned for enable Pin of LCD \texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{_l_c_d_8h_a9ab6954b25558526556ab556c4be540b}{ldata}}~PORTD  /\texorpdfstring{$\ast$}{*}PORTD(PD4-\/PD7) is assigned for LCD Data Output\texorpdfstring{$\ast$}{*}/
+\item 
+\#define \mbox{\hyperlink{_l_c_d_8h_aa1454638c60ba2bfd8885e763b6e637b}{LCD\+\_\+\+Port}}~TRISD  /\texorpdfstring{$\ast$}{*}define macros for PORTD Direction Register\texorpdfstring{$\ast$}{*}/
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_l_c_d_8h_aa53c9d40f3aa552a9974cd55ac510cb3}{LCD\+\_\+\+Init}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d_8h_a28735c052c54fa576f8f6f8bca963fe4}{LCD\+\_\+\+Command}} (unsigned char)
+\item 
+void \mbox{\hyperlink{_l_c_d_8h_aabb29c7a1ecbadd623142601b109caff}{LCD\+\_\+\+Char}} (unsigned char x)
+\item 
+void \mbox{\hyperlink{_l_c_d_8h_a22f0a1e06eef47597408d0b782fa49f6}{LCD\+\_\+\+String}} (const char \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{_l_c_d_8h_afedff6ea961e4641984f319129e3a1d4}{LCD\+\_\+\+String\+\_\+xy}} (char, char, const char \texorpdfstring{$\ast$}{*})
+\item 
+void \mbox{\hyperlink{_l_c_d_8h_ae60d0b62d7eb3fa31266c095d7b3c245}{LCD\+\_\+\+Clear}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+Confi. 
+
+Functions Handler LCD 16x2 mode 4 bits.
+
+\begin{DoxyDate}{Fecha}
+2022-\/06-\/08 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autor}
+Fulvio Vivas \href{mailto:fyvivas@unicauca.edu.co}{\texttt{ fyvivas@unicauca.\+edu.\+co}}
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+2022-\/06-\/08 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autor}
+Fulvio Vivas \href{mailto:fyvivas@unicauca.edu.co}{\texttt{ fyvivas@unicauca.\+edu.\+co}} 
+\end{DoxyAuthor}
+\begin{DoxyParagraph}{Copyright}
+Information contained herein is proprietary to and constitutes valuable confidential trade secrets of unicauca, and is subject to restrictions on use and disclosure.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Copyright (c) unicauca 2022. All rights reserved.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+The copyright notices above do not evidence any actual or intended publication of this material. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Documentación de «define»}
+\Hypertarget{_l_c_d_8h_a22e6626f2c98ed902f8ded47f6438c05}\label{_l_c_d_8h_a22e6626f2c98ed902f8ded47f6438c05} 
+\index{LCD.h@{LCD.h}!EN@{EN}}
+\index{EN@{EN}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{EN}{EN}}
+{\footnotesize\ttfamily \#define EN~PORTDbits.\+RD1  /\texorpdfstring{$\ast$}{*}PIN 1 of PORTD is assigned for enable Pin of LCD \texorpdfstring{$\ast$}{*}/}
+
+\Hypertarget{_l_c_d_8h_aa1454638c60ba2bfd8885e763b6e637b}\label{_l_c_d_8h_aa1454638c60ba2bfd8885e763b6e637b} 
+\index{LCD.h@{LCD.h}!LCD\_Port@{LCD\_Port}}
+\index{LCD\_Port@{LCD\_Port}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Port}{LCD\_Port}}
+{\footnotesize\ttfamily \#define LCD\+\_\+\+Port~TRISD  /\texorpdfstring{$\ast$}{*}define macros for PORTD Direction Register\texorpdfstring{$\ast$}{*}/}
+
+\Hypertarget{_l_c_d_8h_a9ab6954b25558526556ab556c4be540b}\label{_l_c_d_8h_a9ab6954b25558526556ab556c4be540b} 
+\index{LCD.h@{LCD.h}!ldata@{ldata}}
+\index{ldata@{ldata}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{ldata}{ldata}}
+{\footnotesize\ttfamily \#define ldata~PORTD  /\texorpdfstring{$\ast$}{*}PORTD(PD4-\/PD7) is assigned for LCD Data Output\texorpdfstring{$\ast$}{*}/}
+
+\Hypertarget{_l_c_d_8h_af8903d8eea3868940c60af887473b152}\label{_l_c_d_8h_af8903d8eea3868940c60af887473b152} 
+\index{LCD.h@{LCD.h}!RS@{RS}}
+\index{RS@{RS}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{RS}{RS}}
+{\footnotesize\ttfamily \#define RS~PORTDbits.\+RD0  /\texorpdfstring{$\ast$}{*}PIN 0 of PORTD is assigned for register select Pin of LCD\texorpdfstring{$\ast$}{*}/}
+
+
+
+\doxysubsection{Documentación de funciones}
+\Hypertarget{_l_c_d_8h_aabb29c7a1ecbadd623142601b109caff}\label{_l_c_d_8h_aabb29c7a1ecbadd623142601b109caff} 
+\index{LCD.h@{LCD.h}!LCD\_Char@{LCD\_Char}}
+\index{LCD\_Char@{LCD\_Char}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Char()}{LCD\_Char()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Char (\begin{DoxyParamCaption}\item[{unsigned char}]{x }\end{DoxyParamCaption})}
+
+\Hypertarget{_l_c_d_8h_ae60d0b62d7eb3fa31266c095d7b3c245}\label{_l_c_d_8h_ae60d0b62d7eb3fa31266c095d7b3c245} 
+\index{LCD.h@{LCD.h}!LCD\_Clear@{LCD\_Clear}}
+\index{LCD\_Clear@{LCD\_Clear}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Clear()}{LCD\_Clear()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_l_c_d_8h_a28735c052c54fa576f8f6f8bca963fe4}\label{_l_c_d_8h_a28735c052c54fa576f8f6f8bca963fe4} 
+\index{LCD.h@{LCD.h}!LCD\_Command@{LCD\_Command}}
+\index{LCD\_Command@{LCD\_Command}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Command()}{LCD\_Command()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Command (\begin{DoxyParamCaption}\item[{unsigned char}]{cmd }\end{DoxyParamCaption})}
+
+\Hypertarget{_l_c_d_8h_aa53c9d40f3aa552a9974cd55ac510cb3}\label{_l_c_d_8h_aa53c9d40f3aa552a9974cd55ac510cb3} 
+\index{LCD.h@{LCD.h}!LCD\_Init@{LCD\_Init}}
+\index{LCD\_Init@{LCD\_Init}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_Init()}{LCD\_Init()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_l_c_d_8h_a22f0a1e06eef47597408d0b782fa49f6}\label{_l_c_d_8h_a22f0a1e06eef47597408d0b782fa49f6} 
+\index{LCD.h@{LCD.h}!LCD\_String@{LCD\_String}}
+\index{LCD\_String@{LCD\_String}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_String()}{LCD\_String()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+String (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{msg }\end{DoxyParamCaption})}
+
+\Hypertarget{_l_c_d_8h_afedff6ea961e4641984f319129e3a1d4}\label{_l_c_d_8h_afedff6ea961e4641984f319129e3a1d4} 
+\index{LCD.h@{LCD.h}!LCD\_String\_xy@{LCD\_String\_xy}}
+\index{LCD\_String\_xy@{LCD\_String\_xy}!LCD.h@{LCD.h}}
+\doxysubsubsection{\texorpdfstring{LCD\_String\_xy()}{LCD\_String\_xy()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+String\+\_\+xy (\begin{DoxyParamCaption}\item[{char}]{row,  }\item[{char}]{pos,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{msg }\end{DoxyParamCaption})}
+

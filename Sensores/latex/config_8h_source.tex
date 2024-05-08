@@ -1,0 +1,68 @@
+\doxysection{config.\+h}
+\hypertarget{config_8h_source}{}\label{config_8h_source}\mbox{\hyperlink{config_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ CONFIG\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ CONFIG\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifdef\ \ \_\_cplusplus}}
+\DoxyCodeLine{00013\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{comment}{//\ CONFIG1}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#pragma\ config\ FOSC\ =\ INTRC\_CLKOUT}\textcolor{comment}{//\ Oscillator\ Selection\ bits\ (INTOSC\ oscillator:\ CLKOUT\ function\ on\ RA6/OSC2/CLKOUT\ pin,\ I/O\ function\ on\ RA7/OSC1/CLKIN)}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#pragma\ config\ WDTE\ =\ OFF\ \ \ \ \ \ \ }\textcolor{comment}{//\ Watchdog\ Timer\ Enable\ bit\ (WDT\ disabled\ and\ can\ be\ enabled\ by\ SWDTEN\ bit\ of\ the\ WDTCON\ register)}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#pragma\ config\ PWRTE\ =\ OFF\ \ \ \ \ \ }\textcolor{comment}{//\ Power-\/up\ Timer\ Enable\ bit\ (PWRT\ disabled)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#pragma\ config\ MCLRE\ =\ OFF\ \ \ \ \ \ }\textcolor{comment}{//\ RE3/MCLR\ pin\ function\ select\ bit\ (RE3/MCLR\ pin\ function\ is\ digital\ input,\ MCLR\ internally\ tied\ to\ VDD)}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#pragma\ config\ CP\ =\ OFF\ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Code\ Protection\ bit\ (Program\ memory\ code\ protection\ is\ disabled)}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#pragma\ config\ CPD\ =\ OFF\ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Data\ Code\ Protection\ bit\ (Data\ memory\ code\ protection\ is\ disabled)}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#pragma\ config\ BOREN\ =\ OFF\ \ \ \ \ \ }\textcolor{comment}{//\ Brown\ Out\ Reset\ Selection\ bits\ (BOR\ disabled)}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#pragma\ config\ IESO\ =\ OFF\ \ \ \ \ \ \ }\textcolor{comment}{//\ Internal\ External\ Switchover\ bit\ (Internal/External\ Switchover\ mode\ is\ disabled)}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#pragma\ config\ FCMEN\ =\ OFF\ \ \ \ \ \ }\textcolor{comment}{//\ Fail-\/Safe\ Clock\ Monitor\ Enabled\ bit\ (Fail-\/Safe\ Clock\ Monitor\ is\ disabled)}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#pragma\ config\ LVP\ =\ OFF\ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Low\ Voltage\ Programming\ Enable\ bit\ (RB3\ pin\ has\ digital\ I/O,\ HV\ on\ MCLR\ must\ be\ used\ for\ programming)}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{comment}{//\ CONFIG2}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#pragma\ config\ BOR4V\ =\ BOR40V\ \ \ }\textcolor{comment}{//\ Brown-\/out\ Reset\ Selection\ bit\ (Brown-\/out\ Reset\ set\ to\ 4.0V)}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#pragma\ config\ WRT\ =\ OFF\ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Flash\ Program\ Memory\ Self\ Write\ Enable\ bits\ (Write\ protection\ off)}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{comment}{//\ \#pragma\ config\ statements\ should\ precede\ project\ file\ includes.}}
+\DoxyCodeLine{00033\ \textcolor{comment}{//\ Use\ project\ enums\ instead\ of\ \#define\ for\ ON\ and\ OFF.}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#define\ \_XTAL\_FREQ\ 8000000}\textcolor{comment}{//frecuencia\ del\ oscilador}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#ifdef\ \ \_\_cplusplus}}
+\DoxyCodeLine{00038\ \}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{/*\ CONFIG\_H\ */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{comment}{//\ CONFIG1}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#pragma\ config\ FOSC\ =\ INTRC\_CLKOUT}\textcolor{comment}{//\ Oscillator\ Selection\ bits\ (INTOSC\ oscillator:\ CLKOUT\ function\ on\ RA6/OSC2/CLKOUT\ pin,\ I/O\ function\ on\ RA7/OSC1/CLKIN)}}
+\DoxyCodeLine{00045\ \textcolor{preprocessor}{\#pragma\ config\ WDTE\ =\ OFF\ \ \ \ \ \ \ }\textcolor{comment}{//\ Watchdog\ Timer\ Enable\ bit\ (WDT\ disabled\ and\ can\ be\ enabled\ by\ SWDTEN\ bit\ of\ the\ WDTCON\ register)}}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#pragma\ config\ PWRTE\ =\ OFF\ \ \ \ \ \ }\textcolor{comment}{//\ Power-\/up\ Timer\ Enable\ bit\ (PWRT\ disabled)}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#pragma\ config\ MCLRE\ =\ OFF\ \ \ \ \ \ }\textcolor{comment}{//\ RE3/MCLR\ pin\ function\ select\ bit\ (RE3/MCLR\ pin\ function\ is\ digital\ input,\ MCLR\ internally\ tied\ to\ VDD)}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#pragma\ config\ CP\ =\ OFF\ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Code\ Protection\ bit\ (Program\ memory\ code\ protection\ is\ disabled)}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#pragma\ config\ CPD\ =\ OFF\ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Data\ Code\ Protection\ bit\ (Data\ memory\ code\ protection\ is\ disabled)}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#pragma\ config\ BOREN\ =\ OFF\ \ \ \ \ \ }\textcolor{comment}{//\ Brown\ Out\ Reset\ Selection\ bits\ (BOR\ disabled)}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#pragma\ config\ IESO\ =\ OFF\ \ \ \ \ \ \ }\textcolor{comment}{//\ Internal\ External\ Switchover\ bit\ (Internal/External\ Switchover\ mode\ is\ disabled)}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#pragma\ config\ FCMEN\ =\ OFF\ \ \ \ \ \ }\textcolor{comment}{//\ Fail-\/Safe\ Clock\ Monitor\ Enabled\ bit\ (Fail-\/Safe\ Clock\ Monitor\ is\ disabled)}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#pragma\ config\ LVP\ =\ OFF\ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Low\ Voltage\ Programming\ Enable\ bit\ (RB3\ pin\ has\ digital\ I/O,\ HV\ on\ MCLR\ must\ be\ used\ for\ programming)}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{comment}{//\ CONFIG2}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#pragma\ config\ BOR4V\ =\ BOR40V\ \ \ }\textcolor{comment}{//\ Brown-\/out\ Reset\ Selection\ bit\ (Brown-\/out\ Reset\ set\ to\ 4.0V)}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#pragma\ config\ WRT\ =\ OFF\ \ \ \ \ \ \ \ }\textcolor{comment}{//\ Flash\ Program\ Memory\ Self\ Write\ Enable\ bits\ (Write\ protection\ off)}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \textcolor{comment}{//\ \#pragma\ config\ statements\ should\ precede\ project\ file\ includes.}}
+\DoxyCodeLine{00060\ \textcolor{comment}{//\ Use\ project\ enums\ instead\ of\ \#define\ for\ ON\ and\ OFF.}}
+\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#define\ \_XTAL\_FREQ\ 8000000}\textcolor{comment}{//frecuencia\ del\ oscilador}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \textcolor{preprocessor}{\#ifdef\ \ \_\_cplusplus}}
+\DoxyCodeLine{00065\ \}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{comment}{/*\ CONFIG\_H\ */}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+
+\end{DoxyCode}

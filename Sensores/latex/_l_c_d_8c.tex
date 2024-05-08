@@ -1,0 +1,90 @@
+\doxysection{Referencia del archivo LCD.\+c}
+\hypertarget{_l_c_d_8c}{}\label{_l_c_d_8c}\index{LCD.c@{LCD.c}}
+
+
+LCD 16x2 mode 4 bits.  
+
+
+{\ttfamily \#include $<$xc.\+h$>$}\newline
+{\ttfamily \#include "{}LCD.\+h"{}}\newline
+{\ttfamily \#include "{}config.\+h"{}}\newline
+\doxysubsubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_l_c_d_8c_aa53c9d40f3aa552a9974cd55ac510cb3}{LCD\+\_\+\+Init}} (void)
+\item 
+void \mbox{\hyperlink{_l_c_d_8c_a5deccc9bde4056e7354d6e4a02b24a41}{LCD\+\_\+\+Command}} (unsigned char cmd)
+\item 
+void \mbox{\hyperlink{_l_c_d_8c_a4d327799821093ffa93c41ec634b0ca6}{LCD\+\_\+\+Char}} (unsigned char dat)
+\item 
+void \mbox{\hyperlink{_l_c_d_8c_ae82669e730dd8cd249730db12f4de7c4}{LCD\+\_\+\+String}} (const char \texorpdfstring{$\ast$}{*}msg)
+\item 
+void \mbox{\hyperlink{_l_c_d_8c_ac164102b5548d181e0865cca65dffd73}{LCD\+\_\+\+String\+\_\+xy}} (char row, char pos, const char \texorpdfstring{$\ast$}{*}msg)
+\item 
+void \mbox{\hyperlink{_l_c_d_8c_ae60d0b62d7eb3fa31266c095d7b3c245}{LCD\+\_\+\+Clear}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+LCD 16x2 mode 4 bits. 
+
+\begin{DoxyDate}{Fecha}
+2024-\/07-\/05 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autor}
+Daniel Rengifo \href{mailto:danielrengifor@unicauca.edu.co}{\texttt{ danielrengifor@unicauca.\+edu.\+co}}
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+2022-\/06-\/08 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Autor}
+Fulvio Vivas \href{mailto:fyvivas@unicauca.edu.co}{\texttt{ fyvivas@unicauca.\+edu.\+co}} 
+\end{DoxyAuthor}
+\begin{DoxyParagraph}{Copyright}
+Information contained herein is proprietary to and constitutes valuable confidential trade secrets of unicauca, and is subject to restrictions on use and disclosure.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+Copyright (c) unicauca 2022. All rights reserved.
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{}
+The copyright notices above do not evidence any actual or intended publication of this material. 
+\end{DoxyParagraph}
+
+
+\doxysubsection{Documentación de funciones}
+\Hypertarget{_l_c_d_8c_a4d327799821093ffa93c41ec634b0ca6}\label{_l_c_d_8c_a4d327799821093ffa93c41ec634b0ca6} 
+\index{LCD.c@{LCD.c}!LCD\_Char@{LCD\_Char}}
+\index{LCD\_Char@{LCD\_Char}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_Char()}{LCD\_Char()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Char (\begin{DoxyParamCaption}\item[{unsigned char}]{dat }\end{DoxyParamCaption})}
+
+\Hypertarget{_l_c_d_8c_ae60d0b62d7eb3fa31266c095d7b3c245}\label{_l_c_d_8c_ae60d0b62d7eb3fa31266c095d7b3c245} 
+\index{LCD.c@{LCD.c}!LCD\_Clear@{LCD\_Clear}}
+\index{LCD\_Clear@{LCD\_Clear}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_Clear()}{LCD\_Clear()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_l_c_d_8c_a5deccc9bde4056e7354d6e4a02b24a41}\label{_l_c_d_8c_a5deccc9bde4056e7354d6e4a02b24a41} 
+\index{LCD.c@{LCD.c}!LCD\_Command@{LCD\_Command}}
+\index{LCD\_Command@{LCD\_Command}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_Command()}{LCD\_Command()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Command (\begin{DoxyParamCaption}\item[{unsigned char}]{cmd }\end{DoxyParamCaption})}
+
+\Hypertarget{_l_c_d_8c_aa53c9d40f3aa552a9974cd55ac510cb3}\label{_l_c_d_8c_aa53c9d40f3aa552a9974cd55ac510cb3} 
+\index{LCD.c@{LCD.c}!LCD\_Init@{LCD\_Init}}
+\index{LCD\_Init@{LCD\_Init}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_Init()}{LCD\_Init()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_l_c_d_8c_ae82669e730dd8cd249730db12f4de7c4}\label{_l_c_d_8c_ae82669e730dd8cd249730db12f4de7c4} 
+\index{LCD.c@{LCD.c}!LCD\_String@{LCD\_String}}
+\index{LCD\_String@{LCD\_String}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_String()}{LCD\_String()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+String (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{msg }\end{DoxyParamCaption})}
+
+\Hypertarget{_l_c_d_8c_ac164102b5548d181e0865cca65dffd73}\label{_l_c_d_8c_ac164102b5548d181e0865cca65dffd73} 
+\index{LCD.c@{LCD.c}!LCD\_String\_xy@{LCD\_String\_xy}}
+\index{LCD\_String\_xy@{LCD\_String\_xy}!LCD.c@{LCD.c}}
+\doxysubsubsection{\texorpdfstring{LCD\_String\_xy()}{LCD\_String\_xy()}}
+{\footnotesize\ttfamily void LCD\+\_\+\+String\+\_\+xy (\begin{DoxyParamCaption}\item[{char}]{row,  }\item[{char}]{pos,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{msg }\end{DoxyParamCaption})}
+
